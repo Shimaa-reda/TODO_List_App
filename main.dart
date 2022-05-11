@@ -121,7 +121,7 @@ class TodosScreen extends StatelessWidget {
                         color: Colors.white,
                       ),
                       Text(
-                        ' Complete  ${complete_task.length}',
+                        ' Completed  ${complete_task.length}',
                         style: TextStyle(color: Colors.white),
                       )
                     ])),
@@ -222,10 +222,13 @@ class UncompletedTasks extends StatelessWidget {
                   )),
               leading: Icon(
                 Icons.circle_outlined,
+                color: Colors.white,
                 size: 20,
+              ),
+              trailing: Icon(
+                Icons.star_border,
                 color: Colors.white,
               ),
-              trailing: Icon(Icons.star_border),
             ),
             SizedBox(
               height: 410,
@@ -312,7 +315,10 @@ class CompletedTasks extends StatelessWidget {
                 size: 20,
                 color: Colors.white,
               ),
-              trailing: Icon(Icons.star_border),
+              trailing: Icon(
+                Icons.star_border,
+                color: Colors.white,
+              ),
             ),
             SizedBox(
               height: 410,
